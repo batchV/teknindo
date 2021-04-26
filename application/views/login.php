@@ -5,32 +5,36 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo base_url().'template/css/' ?>index.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url().'Asset/' ?>index.css">
 	<title>Invenotri</title>
 </head>
 <body>
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <!-- Tabs Titles -->
-
-    <!-- Icon -->
-    <div class="fadeIn first">
-      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+    <div class="container login-container">
+      <div class="row">
+        <div class="col-md-6 ads">
+          <h1><span id="fl">Company</span><span id="sl">Name</span></h1>
+        </div>
+        <div class="col-md-6 login-form">
+          <div class="profile-img">
+           
+          </div>
+          <h3>Login</h3>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Sign In</button>
+            </div>
+            <div class="form-group forget-password">
+                <a href="#">Forget Password</a>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-
-    <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form>
-
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
-    </div>
-
-  </div>
-</div>
-</body>
+  </body>
 </html>
