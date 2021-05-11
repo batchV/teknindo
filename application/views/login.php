@@ -11,12 +11,15 @@
 <body>
     <div class="container login-container">
       <div class="row">
+        <div class="logo">
+          </div>
         <div class="col-md-6 ads">
+          <br><br><br><br>
           <h1><span id="fl">CAT</span><span id="sl">System</span></h1>
         </div>
         <div class="col-md-6 login-form">
           <div class="profile-img">
-           
+            <img src="<?php echo base_url().'image/' ?>cat.jpg" alt="  size= "max-witdh=10%/>
           </div>
           <h3>Login</h3>
           <?= form_open(base_url("auth")); ?>
