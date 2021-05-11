@@ -11,3 +11,5 @@ $route['admin'] = 'admin/dashboard';
 $route['manager'] = 'manager/dashboard';
 
 $route['manager'] = 'teknisi/dashboard';
+
+$route['login/(:any)'] = 'login/$1';

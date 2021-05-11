@@ -12,14 +12,14 @@
     <div class="container login-container">
       <div class="row">
         <div class="col-md-6 ads">
-          <h1><span id="fl">Company</span><span id="sl">Name</span></h1>
+          <h1><span id="fl">CAT</span><span id="sl">System</span></h1>
         </div>
         <div class="col-md-6 login-form">
           <div class="profile-img">
            
           </div>
           <h3>Login</h3>
-          <form>
+          <?= form_open(base_url("auth")); ?>
             <div class="form-group">
               <input type="text" class="form-control" name="username" placeholder="Username">
             </div>
@@ -27,12 +27,12 @@
               <input type="text" class="form-control" name="password" placeholder="Password">
             </div>
             <div class="form-group">
-              <button type="button" class="btn btn-primary btn-lg btn-block">Sign In</button>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Sign In</button>
             </div>
             <div class="form-group forget-password">
                 <a href="#">Forget Password</a>
             </div>
-          </form>
+          <?= form_close(); ?>
         </div>
       </div>
     </div>
