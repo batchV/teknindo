@@ -7,8 +7,6 @@
                 public function __construct(){ 
                         parent::__construct();
                         $this->load->model('M_auth','auth');
-
-
                 }
                 public function setError(){
                         $error='pesan kesalahan';
