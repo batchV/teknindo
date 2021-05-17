@@ -59,17 +59,30 @@
         </li>
          <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Barang</span>
+            <i class="fa fa-dashboard"></i> <span>Pemesanan</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Barang Masuk</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Barang Keluar</a></li>
+            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Data </a></li>
+            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> HIstori </a></li>
           </ul>
         </li>
          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Permintaan</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span> 
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Data </a></li>
+            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> HIstori </a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Laporan</span>
             <span class="pull-right-container">
@@ -77,8 +90,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Laporan Mingguan</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Laporan Bulanan</a></li>
+            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Permintaan</a></li>
+            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Pemesanan </a></li>
           </ul>
         </li>
          <li>
@@ -93,10 +106,7 @@
           <ul class="treeview-menu">
           </ul>
         </li>
-      <?php }?>      
-
-             <?php
-
+      <?php }
        elseif ($this->session->userdata('jabatan') == "Manager") {
        ?>
         <li class="treeview">
@@ -115,14 +125,26 @@
         </li>
          <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Barang</span>
+            <i class="fa fa-dashboard"></i> <span>Pemesanan</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Barang Masuk</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Barang Keluar</a></li>
+            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Data </a></li>
+            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> HIstori </a></li>
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Permintaan</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span> 
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Data </a></li>
+            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> HIstori </a></li>
           </ul>
         </li>
          <li class="treeview">
@@ -133,8 +155,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Laporan Mingguan</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Laporan Bulanan</a></li>
+            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Permintaan</a></li>
+            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Pemesanan </a></li>
           </ul>
         </li>
          <li>
@@ -149,10 +171,7 @@
           <ul class="treeview-menu">
           </ul>
         </li>
-      <?php }?>    
-
-             <?php
-
+      <?php }
        elseif ($this->session->userdata('jabatan') == "Teknisi") {
        ?>
         <li class="treeview">
@@ -171,28 +190,16 @@
         </li>
          <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Barang</span>
+            <i class="fa fa-dashboard"></i> <span>Permintaan</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Barang Masuk</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Barang Keluar</a></li>
+            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Data</a></li>
+            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Histori</a></li>
           </ul>
-        </li>
-         <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Laporan</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Laporan Mingguan</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Laporan Bulanan</a></li>
-          </ul>
-        </li>
+        </li>        
          <li>
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Profil</span>
