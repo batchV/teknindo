@@ -47,11 +47,11 @@
                                         $data = $cek;
                                         if ($data['jabatan'] == 'Admin') {
                                                 $array = array(
-                                                        'nama' => 'assa',
-                                                        'jabatan' => 'sasad'
+                                                         'nama' => $data['nama'],
+                                                        'jabatan' => $data['jabatan']
                                                 );                                     
                                                 $this->session->set_userdata($array);
-                                                 redirect(base_url('admin/dashboard'.$this->session->jabatan));
+                                                 redirect(base_url('admin/dashboard'));
                                         }
                                         elseif ($data['jabatan'] == 'marketing') {
                                                 $array = array(

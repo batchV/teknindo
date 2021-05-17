@@ -7,16 +7,14 @@ class dashboard extends CI_Controller {
 	}
 	public function index()
 	{
-		echo $this->session->nama;
-	// if ($this->session->userdata('nama') == NULL) {
-	// 		redirect('login');
-	// 	}
-	// 	$data['content'] = 'Admin/dashboard';
-	// 	$data['title'] = 'HOME';
-	//  	$this->load->view('Admin/_templates/header');
-	//  	$this->load->view('Admin/_templates/navbar');
-	//  	$this->load->view('Admin/_templates/sidebar');
-	//  	$this->load->view('Admin/_templates/content',$data);
-	//  	$this->load->view('Admin/_templates/footer');
+	if ($this->session->userdata('nama') == NULL) {
+			redirect('login');
+		}
+		date_default_timezone_set('Asia/Jakarta');
+		$waktu = date("Y-m-d H:i:s");
+		$data['content'] = 'Admin/dashboard';
+		$data['title'] = 'HOME';
+		$data['waktu'] = $waktu;
+	 	$this->load->view('_templates/wrapper',$data);
 	}
 }
