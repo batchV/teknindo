@@ -51,22 +51,22 @@
                                                 $this->session->set_userdata($array);
                                                  redirect(base_url('admin/dashboard'));
                                         }
-                                        elseif ($data['jabatan'] == 'marketing') {
+                                        elseif ($data['jabatan'] == 'Manager') {
                                                 $array = array(
                                                         'nama' => $data['nama'],
                                                         'jabatan' => $data['jabatan']
                                                 );                                     
                                                 $this->session->set_userdata($array);
-                                                redirect('Marketing/home');
+                                                redirect(base_url('Manager/dashboard'));
                                         }
-                                        elseif ($data['jabatan'] == 'kasir') {
+                                        elseif ($data['jabatan'] == 'Teknisi') {
                                                 $array = array(
                                                         'nama' => $data['nama'],
                                                         'jabatan' => $data['jabatan']
          
                                                 );                                     
                                                 $this->session->set_userdata($array);
-                                                redirect('Kasir/home');
+                                                redirect(base_url('Teknisi/dashboard'));
                                         }
                                 }
                         }
