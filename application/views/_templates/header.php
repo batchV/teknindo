@@ -7,6 +7,8 @@
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
   <link rel="stylesheet" href="<?php echo base_url().'Asset/'?>bower_components/bootstrap/dist/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="<?php echo base_url().'Asset/'?>bower_components/font-awesome/css/font-awesome.min.css">

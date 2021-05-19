@@ -9,7 +9,7 @@
         <li class="active">User profile</li>
       </ol>
       <h4>
-        User Profile
+        <?= $title; ?>
       </h4>
     </section>
 
@@ -20,52 +20,36 @@
         <div class="col-md-10 col-md-push-1 col-md-pull-1">
              <div class="box">
             <div class="box-header">
-                <a href="<?= base_url("Admin/Master/tambah") ?>" type="submit" class="btn btn-info"><i class="fa fa-plus"> 
-                Tambah</i>
+              <a href="<?= base_url("Admin/Pemesanan/f_tambah") ?>" type="submit"  class="btn btn-info"><i class="fa fa-plus"> Tambah</i>
                 </a>
-                <br>
-                <br>
-              <h3 class="box-title">Master Barang</h3>
+              <!-- <h3 class="box-title">Data Table With Full Features</h3> -->
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
-                <tr>
-                  <th>Kode</th>
-                  <th>Nama</th>
-                  <th>referensi</th>
-                  <th>tipe</th>
-                  <th>brand</th>
-                  <th>satuan</th>
-                  <th>lokasi</th>
+                <tr>                  
+                  <th>ID Pemesanan</th>
+                  <th>kode barang</th>
+                  <th>nomer po</th>
+                  <th>Tanggal</th>
+                  <th>Penerima</th>
+                  <th>SUpplier</th>
                   <th>qty</th>
-                  <th>Edit</th>
-                  <th>Hapus</th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php 
                   foreach ($data as $d) {
                 ?>
-                
                 <tr>
+                  <td><?= $d['id_pemesanan'] ?></td>
                   <td><?= $d['kode_barang'] ?></td>
-                  <td><?= $d['nama_barang'] ?></td>
-                  <td><?= $d['referensi'] ?></td>
-                  <td><?= $d['tipe'] ?></td>
-                  <td><?= $d['brand'] ?></td>
-                  <td><?= $d['satuan'] ?></td>
-                  <td><?= $d['kode_lokasi'] ?></td>
+                  <td><?= $d['no_po'] ?></td>
+                  <td><?= $d['tgl_barang_masuk'] ?></td>
+                  <td><?= $d['penerima'] ?></td>
+                  <td><?= $d['Kode_suplier'] ?></td>
                   <td><?= $d['qty'] ?></td>
-                  <td>  
-                    <a href="<?= base_url("Admin/Master/edit?kd=".$d['kode_barang']."") ?>" class="btn btn-warning btn-xs">
-                      <i class="fa fa-pencil"></i></a>
-                  </td>
-                  <td>
-                    <a href="<?= base_url("Admin/Master/delete?kd=".$d['kode_barang']."") ?>" class="btn btn-danger btn-xs">
-                    <i class="fa fa-trash"></i></a>
-                  </td>
                 </tr>
                 <?php } ?>
                 </tbody>

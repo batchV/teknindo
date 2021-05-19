@@ -13,10 +13,4 @@ class Master extends CI_Controller {
 		$data['data'] = $this->barang->select();
 		$this->load->view('_templates/wrapper',$data);
 	}
-
-	public function tambah(){
-		$data['content'] = 'admin/tambah_master';
-		$data['data'] = $this->barang->select();
-		$this->load->view('_templates/wrapper',$data);
-	}
 }

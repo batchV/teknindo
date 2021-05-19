@@ -65,8 +65,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Data </a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> HIstori </a></li>
+            <li><a href="<?= base_url("Admin/Pemesanan/data") ?>"><i class="fa fa-circle-o"></i> Data </a></li>
+            <li><a href="<?= base_url("Admin/Pemesanan/histori") ?>"><i class="fa fa-circle-o"></i> HIstori </a></li>
           </ul>
         </li>
          <li class="treeview">
@@ -100,7 +100,7 @@
           </a>
         </li>
          <li>
-          <a href="#">
+          <a href="<?= base_url("logout")?>">
             <i class="fa fa-dashboard"></i> <span>Log Out</span>
           </a>
           <ul class="treeview-menu">
@@ -165,7 +165,7 @@
           </a>
         </li>
          <li>
-          <a href="#">
+          <a href="<?= base_url("logout")?>">
             <i class="fa fa-dashboard"></i> <span>Log Out</span>
           </a>
           <ul class="treeview-menu">
@@ -206,7 +206,7 @@
           </a>
         </li>
          <li>
-          <a href="#">
+          <a href="<?= base_url("logout")?>">
             <i class="fa fa-dashboard"></i> <span>Log Out</span>
           </a>
           <ul class="treeview-menu">
